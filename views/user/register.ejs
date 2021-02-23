@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html  lang="en">
+<%- include('../partials/head', {title: 'Registro'}) %>
+<%- include('../partials/header') %>
+<body>
+    <main class="continer-registro">
+        <form class="registro" action = "datos.html" method="POST">
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="Nombre completo">
+            </div>
+            <div class="input">
+                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+                <label class="label">Fecha de nacimiento</label>
+            <div class="input">
+                <input type="date" name="date" id="date" placeholder="dd">
+            </div>
+            <div class="input">
+                <input type="text" name="adress" id="adress" placeholder="Dirección">
+            </div>
+            <br>
+            <label class="titulo">Perfil del usuario</label>
+            <div class="perfil">
+                <input type="radio" name="usuaro" value="comprador">
+                <label class="label" for="usuario">Comprador</label>
+                <input type="radio" name="usuario" value="vendedor">    
+                <label class="label" for="usuario">Vendedor</label> 
+            </div>
+            <label class="titulo">Intereses</label>
+            <div class="intereses">
+                <div class="check">       
+                    <input type="checkbox" name="intereses" value="electro">
+                    <label class="label" for="intereses">Electro</label>
+                </div>
+                <div class="check">                  
+                    <input type="checkbox" name="intereses" value="moda"> 
+                    <label class="label" for="intereses">Moda</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="intereses" value="hogar">
+                    <label class="label" for="intereses">Hogar</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="intereses" value="jugueteria">
+                    <label class="label" for="intereses">Juguetería</label>
+                </div>
+                <div class="check">         
+                    <input type="checkbox" name="initial-scale" value="vida-sana">
+                    <label class="label" for="intereses">Vida sana</label>
+                </div>
+            </div>
+            <label class="titulo">Elegí tu foto de usuario</label>
+            <div class="input">
+                <input type="file" name="file" id="file" placeholder="Seleccionar archivo">
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">
+            </div>
+            <div class="input">
+                <input type="password" name="password" id="password" placeholder="Confirma tu contraseña">
+            </div>
+            <div class="center">
+                <button class="submit" type="submit">Enviar</button>
+            </div>
+            <div class="center">
+                <button class="clear" type="reset">Borrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+<br>
+<%- include('../partials/footer') %>
+</html> 
